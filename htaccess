@@ -1,0 +1,8 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/harmiste/public_html/indisk-webhook.harmistechnology.com"
+PassengerBaseURI "/"
+PassengerNodejs "/home/harmiste/nodevenv/public_html/indisk-webhook.harmistechnology.com/20/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+PassengerAppLogFile "/home/harmiste/public_html/indisk-webhook.harmistechnology.com/.log"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
