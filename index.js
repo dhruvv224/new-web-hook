@@ -45,6 +45,7 @@ app.post("/hooks/payment_failure", (req, res) => {
 
 // New API for frontend (without socket)
 app.get("/response/status", (req, res) => {
+  console.log(paymentStatus,":paymentStatus")
   if (!paymentStatus) {
     return res.status(404).json({
       status: "pending",
