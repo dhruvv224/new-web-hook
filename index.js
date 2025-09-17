@@ -48,6 +48,7 @@ app.get("/hooks/payment_success", async function (req, res) {
   const resp = await axios.get("https://www.vivapayments.com/api/messages/config/token", {
     headers: { 'Authorization': `Basic ${credentials}` }
   });
+  console.log(resp,"::response")
   let verificationKey = resp.data.Key;
   res.status(200).json({
     //first is dev key, second is prod key
@@ -64,6 +65,8 @@ app.get("/hooks/payment_failure", async function (req, res) {
   const resp = await axios.get("https://www.vivapayments.com/api/messages/config/token", {
     headers: { 'Authorization': `Basic ${credentials}` }
   });
+    console.log(resp,"::response")
+
   let verificationKey = resp.data.Key;
   res.status(200).json({
     //first is dev key, second is prod key
